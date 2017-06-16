@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+
+#header{
+    background-color: aqua;
+    width:100%;
+    position: fixed;
+    height: 70px;
+    z-index: 1000;
+
+}
+
+#menu{
+    background-color: bisque;
+    width:300px;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+}
+
+#content{
+    width: 80%;
+    float: left;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+#title{
+    background-color: aquamarine;
+}
+
+#section{
+    background-color: midnightblue;
+    width: 80%;
+    float: left;
+}
+
+#sidebar{
+    background-color: darkgreen;
+    width:20%;
+    height:500px;
+    float: right;
+}
+
+#footer{
+    background-color: aquamarine;
+    height: 50px;
+    width: 100%;
+}
+
+/* Feature */
+.feature{
+    height: 180px;
+}
+
+.feature .feature-image{
+    float: left;
+    width: 260px;
+    padding: 5px;
+}
+
+.feature .feature-body{
+    float: left;
+    width: calc(100% - 270px);
+}
+
+.feature .feature-title{
+    color: white;
+}
+
+.feature .feature-view{
+    background: url("../images/sprite-k14.20.png");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -431px -209px;
+    margin-top: 20px;
+}
+
+.feature .feature-view-count{
+    display: inline-block;
+    color: yellow;
+}
+
+/* SideBox */
+.side-box{
+    position: relative;
+    width: 340px;
+    overflow: hidden;
+}
+
+.side-box img{
+    width: 100%;
+}
+.side-box .side-body{
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: yellow;
+    height: 150px;
+    transition: bottom 0.5s;
+}
+
+.side-box:hover .side-body{
+    bottom: 0;
+}
